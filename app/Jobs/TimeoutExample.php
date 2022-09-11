@@ -14,8 +14,8 @@ class TimeoutExample implements ShouldQueue
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     public int $timeout = 1;
-    //public bool $failOnTimeout = true;
-    //public int $tries = 3;
+    public bool $failOnTimeout = false;
+    public int $tries = 3;
 
     /**
      * Create a new job instance.
